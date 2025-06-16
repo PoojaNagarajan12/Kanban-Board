@@ -34,7 +34,7 @@ allPriorityColors.forEach(colorEle => {
         // add the active class to div which is clicked
         colorEle.classList.add('active')
 
-        modalPriorityColor = colorEle.classList[0]
+        modalPriorityColor = colorEle.classList[1]
 
     })
 })
@@ -204,7 +204,7 @@ const handleLock = ticket => {
 // Implement filter
 toolboxColors.forEach(toolboxColor => {
     toolboxColor.addEventListener('click', event => {
-        const selectedToolBoxColor = toolboxColor.classList[0]
+        const selectedToolBoxColor = toolboxColor.classList[1]
 
         const filteredTickets = ticketArray.filter(ticket => {
             return selectedToolBoxColor === ticket.color
