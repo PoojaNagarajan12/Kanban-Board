@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kanban Board</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/50fbe7609c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="filters">
+      <div class="filter color-lightpink"></div>
+      <div class="filter color-lightgreen"></div>
+      <div class="filter color-lightblue"></div>
+      <div class="filter color-black"></div>
+    </div>
+    <div class="actions">
+      <button class="btn add-btn"><i class="fa-solid fa-plus"></i></button>
+      <button class="btn remove-btn"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal-cont">
+    <textarea class="textArea-cont" placeholder="Enter your task..."></textarea>
+    <div class="priority-select">
+      <div class="priority color-lightpink active"></div>
+      <div class="priority color-lightgreen"></div>
+      <div class="priority color-lightblue"></div>
+      <div class="priority color-black"></div>
+    </div>
+  </div>
+   <div class="main-cont">
+    </div>
+
+  <script src="https://unpkg.com/shortid-dist@1.0.5/dist/shortid-2.2.13.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
